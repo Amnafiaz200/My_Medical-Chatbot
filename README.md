@@ -5,6 +5,10 @@ MediBot AI is a medical chatbot powered by LangChain, HuggingFace, and Groq LLMs
 It allows users to ask health-related questions and get answers directly from medical PDFs or other documents.
 The app uses Retrieval-Augmented Generation (RAG) to ensure accurate, context-based responses with source citations.
 
+Screenshot of MediBot AI:
+<img width="1814" height="959" alt="image" src="https://github.com/user-attachments/assets/d946e08d-b85b-4f6f-9dd1-56905ea1d2a5" />
+
+
 🚀 Features
 🧠 Retrieval-Augmented Generation (RAG) — combines document retrieval with LLM reasoning.
 📚 PDF Knowledge Base — reads and indexes medical documents using FAISS.
