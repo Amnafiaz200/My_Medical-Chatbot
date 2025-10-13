@@ -39,7 +39,10 @@ def load_llm(huggingface_repo_id, HF_TOKEN):
 
 
 def main():
-    st.title("Hi, I AM YOUR CHATBOT! 🤖")
+     st.markdown(
+    "<h1 style='text-align: center; background-color: lightblue; color: blue; font-size: 40px;'>Hi, I AM YOUR MEDICAL CHATBOT! 🤖</h1>",
+    unsafe_allow_html=True
+)
 
     if 'messages' not in st.session_state:
         st.session_state.messages = []
@@ -90,7 +93,8 @@ def main():
 
             result=response["result"]
             source_documents=response["source_documents"]
-            result_to_show=result+"\nSource Docs:\n"+str(source_documents)
+            result_to_show=result
+            # result_to_show=result+"\nSource Docs:\n"+str(source_documents) #If you want the source of Result
             #response="Hi, I am MediBot!"
             st.chat_message('assistant').markdown(result_to_show)
             st.session_state.messages.append({'role':'assistant', 'content': result_to_show})
